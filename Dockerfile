@@ -1,5 +1,5 @@
 FROM node:13.5.0-alpine3.11
-COPY ["./service","config_ws_tls.json","/usr/src/nodejs/"]
+COPY ["./service","/usr/src/nodejs/"]
 RUN apk update \
         && apk upgrade \
         && apk add --no-cache bash \
